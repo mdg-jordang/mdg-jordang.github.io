@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>de oder side</title>
+	<style type="text/css">
+	
+		* {background-color: #EAEAEA}
+
+		
+		div.mid {
+			background-color: #5D5D5D;
+			width: 10px; height: 300px;
+    		position: absolute;
+			left: 0; right: 0;
+    		margin: auto 50%;
+			top: 50%;
+			margin-top: -150px;
+	}
+		
+		div.boxone {
+			background-color: #B1B1B1;
+			width: 20px; height: 20px;
+			position: absolute;
+			left: 0; right: 0;
+    		margin: auto 40%;
+			top: 50%;
+			margin-top: -10px;	
+	}
+		
+		div.boxtwo {
+			background-color: #008702;
+			width: 20px; height: 20px;
+			position: absolute;
+			left: 0; right: 0;
+    		margin: auto 60%;
+			top: 50%;
+			margin-top: -10px;	
+	}
+		
+	</style>
+</head>
+	
+<body>
+
+	<script>
+	function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+	</script>
+	
+	<div class="mid"></div>
+	
+	<div class="boxone" onmouseover="PlaySound('left')" onmouseout="StopSound('left')">
+    </div>
+	
+	<div class="boxtwo" onmouseover="PlaySound('right')" onmouseout="StopSound('right')">
+	</div>
+
+	<audio id="right" src="right.mp3"/>
+	<audio id="left" src="left.mp3"/>
+	
+</body>
+</html>

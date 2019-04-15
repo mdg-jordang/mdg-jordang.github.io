@@ -1,0 +1,22 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="theothersidetho.gov" resolutions="1x" timestamp="1554296345395">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="4262762144" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="wad_proj3.html" crc="402696105" seo="true" mt="1551812488000"/>
+    <file name="wad_proj5.html" crc="3847982184" seo="true" mt="1553478050000"/>
+    <file name="wad_ex3.html" crc="4172810695" seo="true" mt="1550497404000"/>
+    <file name="wad_gif.gif" crc="4052003470" seo="true" mt="1552275010000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4286661555" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4048753008" seo="true" mt="1554296249663" redirect="true"/>
+</manifest>
