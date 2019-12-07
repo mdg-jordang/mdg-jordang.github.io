@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+			body {
+			    background-color: white;
+		}
+			div.infotxt {
+				background-color: darkgray;
+				padding: 10px;
+				border-radius: 0px;
+				width: 250px;
+				margin-bottom: 5px;
+		}
+			div.infolink {
+				float: left;
+				background: darkgray;
+				padding: 10px;
+				border-radius: 0px;
+				width: 112px;
+				margin-bottom: 5px;
+				margin-right: 6px;
+    			-moz-transition: all .2s ease-in;
+    			-o-transition: all .2s ease-in;
+   				-webkit-transition: all .2s ease-in;
+				transition: all .2s ease-in;
+		}
+			.infolink:hover{
+				background: #FFA4C9;
+		}
+			
+			div.infocon {
+				width: 280px;
+				position: fixed;
+				margin-left: 10%;
+				margin-top: 2%;
+				z-index: 8;
+		}
+		
+			p.gen1 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				font-size: 14px;
+				color: white;
+				text-align: right;
+				padding: 5px;
+		}
+		
+			p.gen2 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				font-weight: bold;
+				font-size: 14px;
+				color: white;
+				text-align: right;
+		}
+		
+			p.head {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				font-size: 20px;
+				font-weight: bold;
+				color: darkgray;
+				text-align: right;
+				margin-right: 20px;
+		}
+
+			#background {
+			    position: fixed;
+  				top: 0px;
+ 				left: 0px;
+ 				width: 5%;
+ 				height: 100%;
+ 				background-color: #A4FFC8;
+ 				z-index: -10;
+		}
+
+			a:link, a:visited, a:hover, a:active {
+				text-decoration: none;
+		}
+		
+			div.bcon{
+				position: fixed;
+				z-index: 1;
+				margin-left: 14.5%;
+				margin-top: 30%;
+				width: 500px;
+		}
+			select {
+				margin-top: 15px; margin-left: 20px;
+		}
+			
+			#myhead {
+				height: 100px; width: 100px;
+				position: absolute;
+				z-index: -1;
+				padding-left: 20px;
+		}
