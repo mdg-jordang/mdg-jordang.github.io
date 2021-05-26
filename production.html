@@ -86,11 +86,16 @@
 	
 	
 <script>
-    document.getElementById("links").onchange = function() {
-        if (this.selectedIndex!==0) {
-            window.parent.location.href = this.value;
-        }        
-    };
+    $(function(){
+      // bind change event to select
+      $('#dynamic_select').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
 </script>
 	
 <script>
