@@ -10,6 +10,14 @@
 				width: 250px;
 				margin-bottom: 5px;
 		}
+			div.infotxtstuff {
+				background-color: darkgray;
+				padding: 10px;
+				border-radius: 0px;
+				width: 500px;
+				margin-bottom: 5px;
+				border-bottom-right-radius:50px;
+		}
 			div.infolink {
 				float: left;
 				background: darkgray;
@@ -26,13 +34,16 @@
 			.infolink:hover{
 				background: #FFA4C9;
 		}
-			
 			div.infocon {
-				width: 280px;
-				position: fixed;
+				width: 500px;
+				position: relative;
 				margin-left: 10%;
-				margin-top: 2%;
-				z-index: 8;
+				margin-top: 5%;
+				padding-bottom: 250px;
+		}	
+			div.botlinkscon {
+				width: 280px;
+		
 		}
 		
 			p.gen1 {
@@ -41,6 +52,7 @@
 				color: white;
 				text-align: right;
 				padding: 5px;
+				line-height: 1.4;
 		}
 		
 			p.gen2 {
@@ -56,8 +68,9 @@
 				font-size: 20px;
 				font-weight: bold;
 				color: darkgray;
-				text-align: right;
-				margin-right: 20px;
+				padding-top: 20px;
+				padding-left: 140px;
+				line-height: 2.5;
 		}
 
 			#background {
@@ -88,6 +101,32 @@
 			#myhead {
 				height: 100px; width: 100px;
 				position: absolute;
-				z-index: -1;
 				padding-left: 20px;
+				z-index: 1;
+		}
+			
+			div.iframeround{
+				border-bottom-right-radius: 15px;
+				width: 495px;
+				height: 275px;
+				overflow: hidden;
+				padding-left: 2px;
+		}
+			div.smallimgcon{
+				display:flex;
+				justify-content: space-between;
+				
+				
+		}
+			div.iframeroundsmall{
+				border-bottom-right-radius: 15px;
+				width: 245px;
+				height: 138px;
+				overflow: hidden;
+		}
+			div.kneelingme{
+				position:absolute;
+				padding-left: 520px;
+				padding-top: 1100px;
+				z-index: -1;
 		}
