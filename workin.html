@@ -1,0 +1,108 @@
+<!doctype html>
+
+<!--this website is still very much a work in progress, please excuse some of the jank as i am still learning :V-->
+
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title>mdg-jordang</title>
+	
+	<link rel="icon" href="img/myhead_03.png">
+	
+	<link rel="stylesheet" type="text/css" href="indexcss.css">
+	
+	<base target="_parent">
+	
+<script src="jquery-3.6.0.min.js"></script> 
+	
+    <script> 
+    $(function(){
+      $("#botlinks").load("botlinks.html"); 
+    });
+    </script> 
+	
+</head>
+	
+<body>
+	
+	<div class="infocon">
+		
+	<div class="kneelingme"></div>
+		
+		<div id="myhead2"><img src="img/myhead_04.png" height="150px"></div>
+		
+		<p class="head">jordan garcia</p>
+				
+		<div class="infotxtstuff">
+			
+			<p class="gen1">
+					i'm workin on it
+			</p>
+			
+		</div>
+		
+		<div class="botlinkscon">
+			
+			<div id="botlinks"></div>
+		
+		</div>
+
+
+
+	
+	</div>
+
+	
+<script>
+//the head is draggable!!!
+//i didn't code this, i took this from the w3school website lmao
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myhead"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<div id="background"></div>
+	
+</body>
+</html>
