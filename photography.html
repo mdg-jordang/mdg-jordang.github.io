@@ -1,0 +1,134 @@
+<!doctype html>
+
+<!--this website is still very much a work in progress, please excuse some of the jank as i am still learning :V-->
+
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title>mdg-jordang</title>
+	
+	<link rel="icon" href="img/myhead_01.png">
+	
+	<link rel="stylesheet" type="text/css" href="indexcss.css">
+	
+	<base target="_parent">
+	
+<script src="jquery-3.6.0.min.js"></script> 
+	
+    <script> 
+    $(function(){
+      $("#botlinks").load("botlinks.html"); 
+    });
+    </script> 
+	
+</head>
+	
+<body>
+	
+	<div class="infocon">
+		
+	<div class="kneelingme2"><img src="img/mewcam.png" height="300px"></div>
+		
+		<div id="myhead"><img src="img/myhead_05.png" height="115px"></div>
+		
+		<p class="head">jordan garcia</p>
+				
+		<div class="infotxtstuff">
+			
+			<p class="gen1">
+				i am a capable photographer with experience in event, film BTS, portrait, and <u><strong>street</strong></u> photography. here are some of my favorite shots!
+			</p>
+			
+			<img src="photimg/f4dab705-6f3b-4769-9953-76ea9f8ad64b_rw_1200.jpg" width="500px">
+			
+			<img src="photimg/DSCF9383.jpg" width="500px">
+			
+			<img src="photimg/IMG_1652.jpg" width="500px">
+			
+			<img src="photimg/987424ee-cf03-4ff0-abf5-c81b11d3aa0e_rw_1920.jpg" width="500px">
+			
+			<img src="photimg/b32dee4d-0829-4329-bb60-f5c4328b581e_rw_1920.jpg" width="500px">
+			
+			<img src="photimg/a8b94ce8-ed54-4dee-9425-1cecbd5b2f8b_rw_1920.jpg" width="500px">
+			
+			<img src="photimg/IMG_1521.JPG" width="500px">
+			
+			<img src="photimg/IMG_1552.JPG" width="500px">
+			
+			<img src="photimg/EmLDvzUW0AIoHUn-orig.jpg" width="500px">
+			
+			<img src="photimg/EmLDxpBXgAEbIie-orig.jpg" width="500px">
+			
+			
+	
+			<p class="gen1">
+			<strong>hire me for your event!</strong>
+			</p>
+			
+		</div>
+		
+		<div class="botlinkscon">
+			
+			<div id="botlinks"></div>
+		
+		</div>
+
+
+
+	
+	</div>
+
+	
+<script>
+//the head is draggable!!!
+//i didn't code this, i took this from the w3school website lmao
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myhead"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<div id="background"></div>
+	
+</body>
+</html>

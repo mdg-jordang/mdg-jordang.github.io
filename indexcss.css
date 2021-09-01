@@ -151,8 +151,14 @@
 		}
 			div.kneelingme{
 				position:absolute;
-				padding-left: 520px;
+				padding-right: 520px;
 				padding-top: 1100px;
+				z-index: -1;
+		}
+			div.kneelingme2{
+				position:absolute;
+				padding-left: 310px;
+				padding-top: 3680px;
 				z-index: -1;
 		}
 			a.inlinelink:link, a.inlinelink:visited {
