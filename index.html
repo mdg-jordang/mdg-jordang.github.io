@@ -1,110 +1,73 @@
 <!doctype html>
-
-<!--this website is still very much a work in progress, please excuse some of the jank as i am still learning :V-->
-
 <html>
 <head>
 <meta charset="utf-8">
-
-	<title>mdg-jordang</title>
-	
-	<link rel="icon" href="img/myhead_01.png">
-	
-	<link rel="stylesheet" type="text/css" href="indexcss.css">
-	
-	<base target="_parent">
-	
-<script src="jquery-3.6.0.min.js"></script> 
-	
-    <script> 
-    $(function(){
-      $("#botlinks").load("botlinks.html"); 
-    });
-    </script> 
-	
+<link rel="stylesheet" type="text/css" href="indexcss.css">
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+<title>mdg-jordang</title>
+<link rel="icon" href="img/mintcirc.png">
 </head>
-	
+
 <body>
-	
-	<div class="infocon">
+	<div class="container">
 		
-		<div id="myhead"><img src="img/myhead_01.png"></div>
+			<div class="imgcircle">
+			<img src="img/301984740_1196009274674940_7177958217837008605_n.png" alt="itsa me">
+			</div>
 		
-		<p class="head">jordan garcia</p>
+		<div class="main">
+			<p class="head">@mdg_jordang</p>
+			<p class="main">hey.
+				<br>
+				<br>
+			my name is <b>jordan garcia</b>.
+			i'm a filipino-american digital multimedia producer and artist. 
+				<br>
+				<br>
+			i'm an animation and music nerd, i like to play old school runescape and rhythm games, and i like my fonts sans serif.
+				<br>
+				<br>
+			below are my socials. 
+				<br>	
+			to the right are my works.
+				<br>
+				<br>
+			thanks for visiting.
+			</p>
+		
+			<div class="socials">
+				<select onChange="window.document.location.href=this.options[this.selectedIndex].value;">
+
+				<option value ="index.html">socials</option>
+
+					<optgroup>
+
+					<option value="https://www.youtube.com/channel/UCXdWri928TrQiyF0R5O95bw">youtube</option>
+					<option value="https://twitter.com/mdg_jordang">twitter</option>
+				<option value="https://www.instagram.com/mdg_jordang/">insta</option>
+					<option value="https://www.linkedin.com/in/mdg-jordang/">linkedin</option>
+					<option value="https://www.twitch.tv/mdg_jordang">twitch</option>
+					<option value="https://open.spotify.com/user/or23tzjspf36gv7rzkv7skd3h">spotify</option>
+					<option value="https://letterboxd.com/mdg_jordang/">letterboxd</option>
+					<option value="https://myanimelist.net/profile/midgecchi">mal</option>
+						
+					</optgroup>
+
+				<option value="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></option>
 			
-		<div class="infotxt">
+				</select>
+			</div>
 			
-			<p class="gen1">hey, i'm a digital media specialist.
-			<br><br>i do photography, videography, editing, voiceover, and video producing.
-			<br><br>i also like games, cartoons, and <font color="#A4FFC8">anime girls</font>.
-			<br><br><br>click below to see some of <font color="#FFA4C9"><strong>my stuff</strong></font>.</p>
 		</div>
 		
-	  <div class="botlinkscon">
+		<div class="flexcon">
+			<a href="mailto:jordan.mdg.garcia@gmail.com"><div class="email"><p class="email">e-mail</p></div></a>
+			<a href="ref/jordan-garcia_resume.pdf"><div class="email"><p class="email">resume</p></div></a>
+			<a href="animation.html"><div class="buttons"><p class="button">animation production</p></div></a>
+			<a href="editing.html"><div class="buttons"><p class="button">video editing & production</p></div></a>
+		</div>
 		
-		  <div id="botlinks"></div>
-		  
-      </div>
-			
 	</div>
-	
-<script>
-    document.getElementById("links").onchange = function() {
-        if (this.selectedIndex!==0) {
-            window.parent.location.href = this.value;
-        }        
-    };
-</script>
-	
-<script>
-//the head is draggable!!!
-//i didn't code this, i took this from the w3school website lmao
-//Make the DIV element draggagle:
-dragElement(document.getElementById("myhead"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-</script>
-
-<div id="background"></div>
 	
 </body>
 </html>

@@ -1,174 +1,171 @@
 @charset "utf-8";
 /* CSS Document */
-			body {
-			    background-color: white;
-		}
-			div.infotxt {
-				background-color: darkgray;
-				padding: 10px;
-				border-radius: 0px;
-				width: 250px;
-				margin-bottom: 5px;
-		}
-			div.infotxtstuff {
-				background-color: darkgray;
-				padding: 10px;
-				border-radius: 0px;
-				width: 500px;
-				margin-bottom: 5px;
-				border-bottom-right-radius:50px;
-		}
-			div.infolink {
-				float: left;
-				background: darkgray;
-				padding: 10px;
-				border-radius: 0px;
-				width: 112px;
-				margin-bottom: 5px;
-				margin-right: 6px;
-    			-moz-transition: all .2s ease-in;
-    			-o-transition: all .2s ease-in;
-   				-webkit-transition: all .2s ease-in;
-				transition: all .2s ease-in;
-		}
-			.infolink:hover{
-				background: #FFA4C9;
-		}
-			div.infocon {
-				width: 500px;
-				position: relative;
-				margin-left: 10%;
-				margin-top: 5%;
-				padding-bottom: 250px;
-		}	
-			div.botlinkscon {
-				width: 280px;
-		
-		}
-		
-			p.gen1 {
-				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-				font-size: 14px;
-				color: white;
-				text-align: right;
-				padding: 5px;
-				line-height: 1.4;
-		}
-		
-			p.gen2 {
-				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-				font-weight: bold;
-				font-size: 14px;
-				color: white;
-				text-align: right;
-		}
-			ul.gen1 {
-				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-				font-size: 14px;
-				color: white;
-				text-align: right;
-				padding: 5px;
-				line-height: 1.4;
-				list-style: none;
-		}
-			ul.gen1 li::before {
-  				content: "\2022";
-				color: #A7C7E7;
-  				font-weight: bold;
-  				display: inline-block;
-  				width: 1em;
-  				padding: 5px;
+
+body {
+	background-color: #AFAFAF;
 }
-		
-			p.head {
-				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-				font-size: 20px;
-				font-weight: bold;
-				color: darkgray;
-				padding-top: 20px;
-				padding-left: 140px;
-				line-height: 2.5;
-		}
 
-			#background {
-			    position: fixed;
-  				top: 0px;
- 				left: 0px;
- 				width: 5%;
- 				height: 100%;
- 				background-color: #A4FFC8;
- 				z-index: -10;
-		}
+div.container{
+	margin-left: 8%;
+	height: 500px;
+	position: absolute;
+	bottom: 10%;
+}
 
-			a:link, a:visited, a:hover, a:active {
-				text-decoration: none;
-		}
-		
-			div.bcon{
-				position: fixed;
-				z-index: 1;
-				margin-left: 14.5%;
-				margin-top: 30%;
-				width: 500px;
-		}
-			select {
-				margin-top: 15px; margin-left: 20px;
-		}
-			
-			#myhead {
-				height: 100px; width: 100px;
-				position: absolute;
-				padding-left: 20px;
-				z-index: 1;
-		}
+div.main {
+	height: 525px;
+	width: 300px;
+		background: linear-gradient(
+    	to right,
+    	#c4ffed 0px,
+		#c4ffed 15px,
+		white 15px,
+		white 100%
+  );
+	border-radius: 10px;
+	box-shadow: 8px 8px grey;
+	float:left;
+}
 
-			#myhead2 {
-				height: 100px; width: 100px;
-				position: absolute;
-				padding-left: 20px;
-				top: -40px;
-				z-index: 1;
-		}
-			
-			div.iframeround{
-				border-bottom-right-radius: 15px;
-				width: 495px;
-				height: 275px;
-				overflow: hidden;
-				padding-left: 2px;
-		}
-			div.smallimgcon{
-				display:flex;
-				justify-content: space-between;
-				
-				
-		}
-			div.iframeroundsmall{
-				border-bottom-right-radius: 15px;
-				width: 245px;
-				height: 138px;
-				overflow: hidden;
-		}
-			div.kneelingme{
-				position:absolute;
-				padding-right: 520px;
-				padding-top: 1100px;
-				z-index: -1;
-		}
-			div.kneelingme2{
-				position:absolute;
-				padding-left: 330px;
-				padding-top: 3680px;
-				z-index: -1;
-		}
-			a.inlinelink:link, a.inlinelink:visited {
-				color:#A4FFC8;
+div.animation {
+	height: 525px;
+	width: 1415px;
+		background: linear-gradient(
+    	to right,
+    	#c4ffed 0px,
+		#c4ffed 15px,
+		white 15px,
+		white 1400px,
+		#ffdbfe 1400px,
+		#ffdbfe 1415px
+  );
+	border-radius: 10px;
+	box-shadow: 8px 8px grey;
+	float:left;
+	margin-right: 20px;
+}
+div.portfoliocon{
+	display: flex;
+	height:425px;
+}
+
+div.portfolio{
+	display: flex;
+	flex-direction: column;
+	margin-left:25px;
+	height: inherit;
+	width: 321px;
+}
+
+div.socials {
+	position:relative;
+	padding-top: 15px;
+	padding-left: 50px;
+}
+
+div.imgcircle {
+	margin-left:190px;
+	position: absolute;
+	bottom: -4%;
+}
+
+div.flexcon{
+	height: 525px;
+	width: 100px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	margin-left: 12px;
+}
+
+div.email{
+	background-color: white;
+	margin-bottom: 10px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+   	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	box-shadow: 5px 5px grey;
+}
+
+.email:hover{
+	background: #ffdbfe;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+div.buttons{
+	background-color: white;
+	height:75px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+   	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	box-shadow: 5px 5px grey;
+}
+
+.buttons:hover{
+	background: #ffdbfe;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+p.head {
+	font-family: 'Open Sans';
+	font-size: 22px;
+	color: grey;
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+p.main {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	color: gray;
+	padding-left: 25px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+p.backbutton {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	color: #ffdbfe;
+	text-align: justify;
+	position:absolute;
+	margin-top: auto;
+	padding-left: 25px;
+}
+
+p.email {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	color: gray;
+	margin-top:0px;
+	text-align: center;
+	font-style: italic;
 	
-		}
-			a.inlinelink:hover{
-				color:#FFA4C9;
-				-moz-transition: all .2s ease-in;
-    			-o-transition: all .2s ease-in;
-   				-webkit-transition: all .2s ease-in;
-				transition: all .2s ease-in;
-		}
+}
+
+p.button {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	color: gray;
+	margin-top:0px;
+	font-style: italic;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
