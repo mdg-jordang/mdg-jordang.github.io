@@ -27,8 +27,23 @@ div.main {
 	float:left;
 }
 
-
-
+div.animation {
+	height: 525px;
+	width: 1415px;
+		background: linear-gradient(
+    	to right,
+    	#c4ffed 0px,
+		#c4ffed 15px,
+		white 15px,
+		white 1400px,
+		#ffdbfe 1400px,
+		#ffdbfe 1415px
+  );
+	border-radius: 10px;
+	box-shadow: 8px 8px grey;
+	float:left;
+	margin-right: 20px;
+}
 div.portfoliocon{
 	display: flex;
 	height:425px;
